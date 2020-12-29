@@ -1,0 +1,17 @@
+{
+  "name": "djkaraoke.ru",
+  "version": "0.1 beta",
+  "description": "djkaraoke site",
+  "main": "index.js",
+  "author": "isavlex",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel": "^1.12.4",
+    "pug": "^3.0.0",
+    "sass": "^1.30.0"
+  },
+  "scripts": {
+    "start": "parcel serve src/pug/index.pug --open",
+    "deploy": "rm -rf dist/* && parcel build src/pug/index.pug --public-url ./"
+  }
+}
